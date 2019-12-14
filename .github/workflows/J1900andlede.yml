@@ -54,9 +54,9 @@ jobs:
           sudo -E apt-get -y autoremove --purge
           sudo -E apt-get clean
           
-     - name: 自定义插件主题
-       run: |
-          cd package
+      - name: 自定义插件主题
+        run: |
+         cd package
           mkdir openwrt-packages
           cd openwrt-packages
           git clone https://github.com/Ameykyl/luci-app-koolproxyR
